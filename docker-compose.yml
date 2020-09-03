@@ -1,0 +1,16 @@
+version: '3.5'
+services:
+  wiki:
+    build: pukiwiki/
+    volumes:
+    - /wiki:/var/www/html/wiki
+    ports:
+    - "80:80"
+    environment:
+      MSP: mail
+  mail:
+    build: postfix/
+    ports:
+    - "25:25"
+    environment:
+      MYNETWORK_HOST: wiki
