@@ -1,0 +1,6 @@
+[submodule "pukiwiki"]
+	path = pukiwiki
+	url = https://github.com/nemodija/docker-lib-pukiwiki.git
+[submodule "postfix"]
+	path = postfix
+	url = https://github.com/nemodija/docker-lib-postfix.git
