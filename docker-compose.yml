@@ -4,12 +4,15 @@ services:
     build: pukiwiki/
     volumes:
     - /wiki:/var/www/html/wiki
+    - /var/log/wiki:/var/log/httpd
     ports:
     - "80:80"
     environment:
       MSP: mail
   mail:
     build: postfix/
+    volumes:
+    - /var/log/mail:/var/log/mail
     ports:
     - "25:25"
     environment:
