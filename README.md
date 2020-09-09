@@ -9,10 +9,10 @@
 - パーミッションは以下を参照
 
 ```sh
-ls -ld /wiki/ /var/log/mail/ /var/log/wiki/
-  # drwxr-xr-x  2  101 adm    22 Sep  9 01:53 /var/log/mail/
-  # drwxr-xr-x  2 root root   41 Sep  9 02:05 /var/log/wiki/
-  # drwxr-xr-x 18   48   48 4096 Sep  7 07:27 /wiki/
+ls -ldn /wiki/ /var/log/mail/ /var/log/wiki/
+  # drwxr-xr-x  2 101  4   22 Sep  9 01:53 /var/log/mail/
+  # drwxr-xr-x  2   0  0   41 Sep  9 02:05 /var/log/wiki/
+  # drwxr-xr-x 18  48 48 4096 Sep  7 07:27 /wiki/
 ```
 
 ## 事前準備
